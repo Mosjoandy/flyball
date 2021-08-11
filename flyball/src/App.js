@@ -1,16 +1,19 @@
-import React from 'react';
+import React from "react";
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 // import { render } from '@testing-library/react';
 
+
+
 function App() {
+
   return (
     <div>
       <Router>
         <div>
           <Route exact path="/">
-            <Home />
+            <Home/>
           </Route>
         </div>
       </Router>
