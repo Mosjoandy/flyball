@@ -13,26 +13,30 @@
     align-items: center;    
     top: 0;
 
-    transition: transform 1s; /* Animation */
 }
 
-#flyballVidBG video:hover {
-    transform: scale(.8); 
- }
-
 #titleName {
-    color: white;
+    color: #008000;
     padding-left: 11vw;
     top: 15vh;
     margin: 0;
     text-align: left;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
 }
+
+#landingBG {
+    background-image: url(./../../images/botRightDoggo.png);
+    /* display: block;
+    position: fixed;
+    top: 0;
+    z-index: 2; */
+}
+
 
 #titleName h1 {
     font-size: 7vh;
-    line-height: 40px;
+    line-height: 60px;
     text-shadow: -1px -1px black;
 }
 

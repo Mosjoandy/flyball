@@ -1,6 +1,8 @@
 import React from "react";
 import './App.css';
-import Home from './components/pages/Home';
+// import Home from './components/pages/Home';
+import Home2 from './components/pages/Home2';
+
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 // import { render } from '@testing-library/react';
 
@@ -13,7 +15,8 @@ function App() {
       <Router>
         <div>
           <Route exact path="/">
-            <Home/>
+            {/* <Home/> */}
+            <Home2/>
           </Route>
         </div>
       </Router>
