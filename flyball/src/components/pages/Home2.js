@@ -1,31 +1,43 @@
 import React, { Component } from 'react';
 import './Home2.css';
 import Logo1 from "../../images/Logo1.png";
-import flyballVid from '../../images/flyballvid.mp4'
+import placeHold from "../../images/115488.jpg";
+import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
+// import flyballVid from '../../images/flyballvid.mp4'
 
 class Home2 extends Component {
 
     render() {
         return (
-            <div>
-                <h1>The Usual Suspects</h1>
-                <div id="socialIconRow">
-                    <div id="socialIcons">FB, IG</div>
-                    <div id="emailRow"></div>
-                </div>
+            <Container fluid>
+                {/* <h1>The Usual Suspects</h1> */}
+                <Row id="socialIconRow">
+                    <Col id="socialIcons">FB, IG</Col>
+                    <Col id="emailRow"></Col>
+                </Row>
 
-                <div id="landingSection">
-                    <div id="logoLeft">
-                        <img id="logoIMG" src={Logo1} alt="Main Doggo Drawn" />
-                    </div>
-                    <div id="landingRight">
-                        <h3>Welcome to the Usual Suspects flyball dog team</h3>
-                        <h4>Dogs of all shapes and sizes are welcome</h4>
-                    </div>
-                    <div id="landingDescription">
-                        <h2>What is flyball?</h2>
-                        <div>Youtube embed</div>
-                        <p>We do not own the rights to this video</p>
+                <Row id="landingSection" className="jusfity-content-md-center">
+                    <Col id="logoLeft" sm={12} xs>
+                        <Card.Img variant="top" src={Logo1} />
+                        {/* <img id="logoIMG" src={Logo1} alt="Main Doggo Drawn" /> */}
+                        <Card.Body>
+                            <Card.Text>
+                                <h3>Welcome to the Usual Suspects flyball dog team</h3>
+                                <h4>Dogs of all shapes and sizes are welcome</h4>
+                            </Card.Text>
+                        </Card.Body>
+                    </Col>
+                </Row>
+                <Row >
+                    <Col>
+                        <h2 >What is flyball?</h2>
+                        <Card.Img variant="bottom" src={placeHold} />
+                        <p>https://youtu.be/mZ9ugj73Oqw</p>
+                        <Card.Subtitle>We do not own the rights to this video</Card.Subtitle>
+                    </Col>
+                </Row>
+                <Row className="bgBlack">
+                    <Col>
                         <p>Flyball is a team relay race for dogs. 2 teams of 4 dogs
                             race against each other. The racecourse consists of 4 jumps
                             spaced 10 feet apart, with a start line 6 feet in front of
@@ -42,15 +54,19 @@ class Home2 extends Component {
                             first team that finishes running all dogs wins. However, both
                             winning and losing teams gain points towards their titles,
                             depending on how fast they finish the race! </p>
-                    </div>
-                    <div>Video here
-                        {/* <video autoPlay loop muted>
+                    </Col>
+                </Row>
+
+
+
+                <div>Video here
+                    {/* <video autoPlay loop muted>
                             <source src={flyballVid} type="video/mp4" />
                         </video> */}
-                    </div>
                 </div>
 
-                <div id="aboutSection">
+
+                <Row>
                     <div id="aboutDescription">
                         <h1>About Us</h1>
                         <h4>The Usual Suspects is the onyl flyball club in the South Bay
@@ -67,47 +83,61 @@ class Home2 extends Component {
                             the UFli and NAFA leagues.</p>
                     </div>
                     <div id="davePicRight">
-                        <img />
+                        {/* <img id="davePic" src={daveIMG} alt="dave's face" /> */}
                     </div>
 
                     <div id="daveDescriptionLeft">
                         <p>On June 28, 2019, our founder Dave Goldwine passed away. His spirit
                             continues to live on in our memories and within his Flyball legacy.</p>
                     </div>
-                </div>
+                </Row>
 
-                <div id="activityInfoSection">
+                <Row className="bgBlack">
                     <h1>Get those paws moving!</h1>
-                    <p>Team Practice is currently Tuesday Nights from 7:00pm to 9:00pm during
-                        warmer months </p>
-                    <div id="googleMapsEmbed">
-                        Google maps embed
-                    </div>
-                    <div id="scheduleLeft">
-                        <h1>First-timer Schedule</h1>
-                        <p>Dog owners are welcome to visit us without your dog on any practice day, to check out the sport, the team members, and get answers to any questions you may have</p>
-                        <p>Bring your pup AND a dog crate to the first and second practice of the month for their first two Intro to Flyball classes</p>
-                        <p>Continue to Beginner classes for $120, which include a one-year membership</p>
-                        <p>We will work with you and teach your dog everything they need to know to master the skills of flyball</p>
-                        <p>Weekly practice is $5 per session (used for park rental fees)</p>
-                    </div>
-                    <div id="schduleRight">
-                        <h1>Experienced Schedule</h1>
-                        <p>Drop-in practices held Weekly</p>
-                        <p>Bring a dog crate</p>
-                        <p>Practice is $5 per session (used for park rental fees)</p>
-                        <p>Annual Club fees apply</p>
-                    </div>
-                </div>
+                    <Col>
+                        <Card className="bgWhite">
+                            <p>Team Practice is currently Tuesday Nights from 7:00pm to 9:00pm during
+                                warmer months </p>
+                            <div id="googleMapsEmbed">
+                                Google maps embed
+                            </div>
+                        </Card>
+                    </Col>
+                    <Row>
+                        <Col xs sm={6}>
+                            <Card className="bgWhite">
+                                <Card.Header>First-timer Schedule</Card.Header>
+                                <ListGroup variant="flush">
+                                    <ListGroup.Item>Dog owners are welcome to visit us without your dog on any practice day, to check out the sport, the team members, and get answers to any questions you may have</ListGroup.Item>
+                                    <ListGroup.Item>Bring your pup AND a dog crate to the first and second practice of the month for their first two Intro to Flyball classes</ListGroup.Item>
+                                    <ListGroup.Item>Continue to Beginner classes for $120, which include a one-year membership</ListGroup.Item>
+                                    <ListGroup.Item>We will work with you and teach your dog everything they need to know to master the skills of flyball</ListGroup.Item>
+                                    <ListGroup.Item>Weekly practice is $5 per session (used for park rental fees)</ListGroup.Item>
+                                </ListGroup>
+                            </Card>
+                        </Col>
+                        <Col xs sm={6}>
+                            <Card className="bgWhite">
+                                <Card.Header>Experienced Schedule</Card.Header>
+                                <ListGroup variant="flush">
+                                    <ListGroup.Item>Drop-in practices held Weekly</ListGroup.Item>
+                                    <ListGroup.Item>Bring a dog crate</ListGroup.Item>
+                                    <ListGroup.Item>Practice is $5 per session (used for park rental fees)</ListGroup.Item>
+                                    <ListGroup.Item>Annual Club fees apply</ListGroup.Item>
+                                </ListGroup>
+                            </Card>
+                        </Col>
+                    </Row>
+                </Row>
 
                 <div id="competitionSection">
                     <h1>Competitions</h1>
                 </div>
 
                 <div id="footer">
-                        
+
                 </div>
-            </div>
+            </Container >
         );
     };
 };

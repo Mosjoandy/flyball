@@ -1,0 +1,27 @@
+/* #landingSection {
+    
+    width: 100%;
+    background-color: salmon;
+} */
+
+/* #landingTop {
+    display: flex;
+} */
+
+/* #logoLeft {
+    background-color: teal;
+    display: inline;
+    width: 50%;
+    align-items: left;
+} */
+
+#logoIMG {
+    width: 100%;
+}
+
+/* #landingRight {
+    background-color: orange;
+    display: inline;
+    width: 50%;
+    align-items: right;
+} */

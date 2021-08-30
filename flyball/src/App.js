@@ -2,7 +2,7 @@ import React from "react";
 import './App.css';
 // import Home from './components/pages/Home';
 import Home2 from './components/pages/Home2';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 // import { render } from '@testing-library/react';
 
