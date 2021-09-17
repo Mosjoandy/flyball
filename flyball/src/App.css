@@ -12,6 +12,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.nav-link {
+  color:white !important;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

@@ -1,15 +1,15 @@
 import React from 'react';
 // import './TopPanel.css';
 import Logo1 from "../../images/Logo1.png";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Image } from "react-bootstrap";
 
 function TopPanel() {
     return (
         <Container fluid>
 
-            <Row id="landingSection" className="jusfity-content-md-center">
-                <Col id="logoLeft" sm={12} xs>
-                    <Card.Img variant="top" src={Logo1} />
+            <Row>
+                <Col sm={12} xs>
+                    <Image src={Logo1} style={{ width:'50%', marginLeft:'auto', marginRight:'auto', display:'block', paddingTop:'7vh'}}/>
                     {/* <img id="logoIMG" src={Logo1} alt="Main Doggo Drawn" /> */}
                     <Card.Body>
                         <Card.Text>
