@@ -6,11 +6,6 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 function TopPanel() {
     return (
         <Container fluid>
-            {/* <h1>The Usual Suspects</h1> */}
-            <Row id="socialIconRow">
-                <Col id="socialIcons">FB, IG</Col>
-                <Col id="emailRow"></Col>
-            </Row>
 
             <Row id="landingSection" className="jusfity-content-md-center">
                 <Col id="logoLeft" sm={12} xs>
