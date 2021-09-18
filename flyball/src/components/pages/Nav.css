@@ -1,0 +1,13 @@
+.navUp {
+    width: 100%;
+  
+    position: fixed;
+    top: 0;
+    transition: top 1s;
+    background-color: #008000;
+  }
+  
+  .navUp--hidden {
+    top: -200px;
+
+  }
