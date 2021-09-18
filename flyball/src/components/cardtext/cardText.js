@@ -20,9 +20,9 @@ export function ExpansionJutsu(props) {
     return (
         <div>
             {props.paraOne}
-            <br />
+            <Card.Text className="text-center">. . . </Card.Text>
             <div className="d-flex justify-content-center">
-                <Badge bg="success" className="text-center" style={{ margin: '10px' }}>More</Badge>
+                <Badge bg="success" className="text-center" style={{ marginBottom: '10px' }}>More</Badge>
             </div>
         </div>
     );

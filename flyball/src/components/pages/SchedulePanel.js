@@ -13,7 +13,7 @@ function SchedulePanel() {
             <Row>
                 <Col>
                     <Card.Text style={{ marginTop: '2vh', marginBottom: '3vh' }}>
-                        Team Practice is currently Tuesday Nights from 7: 00pm to 9: 00pm during
+                        Team Practice is currently Tuesday Nights from 7:00pm to 9:00pm during
                         warmer months
                     </Card.Text>
                     <GoogleEmbed />
