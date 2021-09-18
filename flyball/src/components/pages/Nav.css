@@ -1,13 +1,13 @@
 .navUp {
-    width: 100%;
-  
+    width:100% !important;
     position: fixed;
     top: 0;
-    transition: top 1s;
+    transition: top .8s;
     background-color: #008000;
+    border-bottom: black solid 2px;
+    z-index: 99999;
   }
   
   .navUp--hidden {
     top: -200px;
-
   }

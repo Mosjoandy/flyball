@@ -6,15 +6,22 @@ import { Container, Row, Col, Card, Image } from "react-bootstrap";
 function TopPanel() {
     return (
         <Container fluid>
-
             <Row>
-                <Col sm={12} xs>
-                    <Image src={Logo1} style={{ width:'50%', marginLeft:'auto', marginRight:'auto', display:'block', paddingTop:'7vh'}}/>
-                    {/* <img id="logoIMG" src={Logo1} alt="Main Doggo Drawn" /> */}
-                    <Card.Body>
+                <Col sm={12} xl>
+                    <Image src={Logo1}
+                        style={{
+                            width: '75%',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            display: 'block',
+                            paddingTop: '7vh'
+                        }} />
+                    <Card.Body className="text-center">
+                        <Card.Title style={{ color: '#008000' }}>
+                            Welcome to The Usual Suspects flyball dog team
+                        </Card.Title>
                         <Card.Text>
-                            <h3>Welcome to the Usual Suspects flyball dog team</h3>
-                            <h4>Dogs of all shapes and sizes are welcome</h4>
+                            Dogs of all shapes and sizes are welcome
                         </Card.Text>
                     </Card.Body>
                 </Col>
