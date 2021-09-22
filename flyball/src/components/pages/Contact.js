@@ -8,7 +8,7 @@ import Email from "../../images/email.png";
 
 function Contact() {
     return (
-        <Container className="bgBlack text-center" fluid id='contact' style={{ paddingTop: '4vh' }}>
+        <Container className="bgBlack text-center" fluid id='contact' style={{ paddingTop: '4vh', paddingBottom:'4vh' }}>
             <h2 style={{ fontWeight: 'bold', color:'#008000'}}>Contact</h2>
 
             <Card.Text>We are always looking for new members interested in bringing their pup!</Card.Text>
@@ -37,6 +37,7 @@ function Contact() {
                     />
                 </a>
             </Card.Body>
+            <Card.Text>Copyright © 2021</Card.Text>
         </Container>
     );
 };
