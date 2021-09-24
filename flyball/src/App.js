@@ -26,8 +26,8 @@ function App() {
         <div>
           <Route exact path="/">
 
-            <SchedulePanel />
-            {/* <Nav />
+           
+            <Nav />
             <TopPanel />
             <WhatPanel />
             <AboutUsPanel />
@@ -35,7 +35,7 @@ function App() {
             <SchedulePanel />
             <CompetitionPanel />
             <TheTeam />
-            <Contact /> */}
+            <Contact />
           </Route>
         </div>
       </Router>

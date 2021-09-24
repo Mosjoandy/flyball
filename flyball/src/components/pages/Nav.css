@@ -11,3 +11,7 @@
   .navUp--hidden {
     top: -200px;
   }
+
+  .dropdown-menu {
+    min-width: auto !important;
+  }
