@@ -1,7 +1,5 @@
 import React from "react";
 import './App.css';
-// import Home from './components/pages/Home';
-// import Home2 from './components/pages/Home2';
 
 import Nav from './components/pages/Nav.js'
 import TopPanel from './components/pages/TopPanel.js'
@@ -28,9 +26,8 @@ function App() {
         <div>
           <Route exact path="/">
 
-            {/* <Home/> */}
-            {/* <Home2/> */}
-            <Nav />
+            <SchedulePanel />
+            {/* <Nav />
             <TopPanel />
             <WhatPanel />
             <AboutUsPanel />
@@ -38,7 +35,7 @@ function App() {
             <SchedulePanel />
             <CompetitionPanel />
             <TheTeam />
-            <Contact />
+            <Contact /> */}
           </Route>
         </div>
       </Router>

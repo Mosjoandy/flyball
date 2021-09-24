@@ -1,33 +1,33 @@
-.whatInfo-enter {
+.aboutInfo-enter {
     height: 15vh;
     /* transform: scale(0.9); */
     position: relative;
-    z-index: -8888;
+    z-index: 2;
     overflow: hidden;
-}
+  }
 
-  .whatInfo-enter-active {
-    height: 100vh;
+  .aboutInfo-enter-active {
+    height: 125vh;
     transform: translateX(0);
     transition: height 1s ease, transform 1s ease;
     position: relative;
-    z-index: -8888;
+    z-index: 2;
     overflow: hidden;
-}
+  }
 
-  .whatInfo-exit {
-    height: 100vh;
+  .aboutInfo-exit {
+    height: 125vh;
     position: relative;
-    z-index: -8888;
+    z-index: 2;
     overflow: hidden;
-}
+  }
 
-  .whatInfo-exit-active {
+  .aboutInfo-exit-active {
     height: 15vh;
     transform: translateX(0);
-    transition: height 1s ease, transform 1s ease;
+    transition: height 1s, transform 1s;
     position: relative;
-    z-index: -8888;
+    z-index: 2;
     overflow: hidden;
-}
+  }
   

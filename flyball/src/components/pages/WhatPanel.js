@@ -3,20 +3,23 @@ import './WhatPanel.css';
 import { Container, Row, Col } from "react-bootstrap";
 import flyballVid from '../../images/flyballvid.mp4'
 import YoutubeEmbed from "./../youtube/YoutubeEmbed.js";
-import ExpansionJutsu from '../cardtext/ExpansionJutsu.js'
-import ShrinkingJutsu from '../cardtext/ShrinkingJutsu.js'
+import ExpansionJutsu from '../cardtext/ExpansionJutsu.js';
+import ShrinkingJutsu from '../cardtext/ShrinkingJutsu.js';
+import { CSSTransition } from 'react-transition-group';
+
 
 class WhatPanel extends Component {
     constructor(props) {
         super(props);
 
         this.state = { tori: false }
+        this.state = { tora: false };
 
-        this.choji = this.choji.bind(this);
+        this.obito = this.obito.bind(this);
     };
 
-    choji() {
-        this.setState({ tori: this.tori = !this.tori });
+    obito() {
+        this.setState({ tora: this.tora = !this.tora });
     };
 
     render() {
@@ -31,14 +34,34 @@ class WhatPanel extends Component {
                         </footer>
                     </Col>
                 </Row>
-                <Row>
-                    <Col>
-                        <div onClick={() => this.choji()}>
-                            {this.tori ? <ExpansionJutsu /> : <ShrinkingJutsu />}
-                        </div>
-                    </Col>
-                </Row>
-                <Row style={{marginTop:'2vh'}}>
+
+
+                {this.tora ?
+                    null
+                    :
+                    <div onClick={() => this.setState({ tori: this.tori = true })}>
+                        <ShrinkingJutsu />
+                    </div>
+                }
+                <CSSTransition
+                    in={this.tori}
+                    timeout={900}
+                    classNames="whatInfo"
+                    unmountOnExit
+                    onEnter={() => this.obito()}
+                    onExited={() => this.obito()}
+                >
+                    <div onClick={() => this.setState({ tori: this.tori = false })}>
+                        <ExpansionJutsu />
+                    </div>
+                </CSSTransition>
+
+
+
+
+
+
+                <Row style={{ marginTop: '2vh', position: 'relative', zIndex: '8889' }}>
                     <video autoPlay loop muted>
                         <source src={flyballVid} type="video/mp4" />
                     </video>
