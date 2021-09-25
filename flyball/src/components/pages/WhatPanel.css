@@ -1,33 +1,116 @@
 .whatInfo-enter {
-    height: 15vh;
-    /* transform: scale(0.9); */
-    position: relative;
-    z-index: -8888;
-    overflow: hidden;
+  height: 15vh;
+  /* transform: scale(0.9); */
+  position: relative;
+  z-index: -8888;
+  overflow: hidden;
 }
 
+.whatInfo-enter-active {
+  height: 93vh;
+  transform: translateX(0);
+  transition: height 1s ease, transform 1s ease;
+  position: relative;
+  z-index: -8888;
+  overflow: hidden;
+}
+
+.whatInfo-exit {
+  height: 93vh;
+  position: relative;
+  z-index: -8888;
+  overflow: hidden;
+}
+
+.whatInfo-exit-active {
+  height: 15vh;
+  transform: translateX(0);
+  transition: height 1s ease, transform 1s ease;
+  position: relative;
+  z-index: -8888;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 375px) {
   .whatInfo-enter-active {
-    height: 100vh;
-    transform: translateX(0);
-    transition: height 1s ease, transform 1s ease;
-    position: relative;
-    z-index: -8888;
-    overflow: hidden;
-}
-
+    height: 83vh;
+  }
   .whatInfo-exit {
-    height: 100vh;
-    position: relative;
-    z-index: -8888;
-    overflow: hidden;
-}
-
+    height: 85vh;
+  }
   .whatInfo-exit-active {
     height: 15vh;
-    transform: translateX(0);
-    transition: height 1s ease, transform 1s ease;
-    position: relative;
-    z-index: -8888;
-    overflow: hidden;
+  }
 }
-  
+
+@media only screen and (min-width: 400px) {
+  .whatInfo-enter-active {
+    height: 80vh;
+  }
+  .whatInfo-exit {
+    height: 80vh;
+  }
+  .whatInfo-exit-active {
+    height: 15vh;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .whatInfo-enter-active {
+    height: 70vh;
+  }
+  .whatInfo-exit {
+    height: 70vh;
+  }
+  .whatInfo-exit-active {
+    height: 15vh;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .whatInfo-enter-active {
+    height: 65vh;
+  }
+  .whatInfo-exit {
+    height: 65vh;
+  }
+  .whatInfo-exit-active {
+    height: 15vh;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .whatInfo-enter-active {
+    height: 49vh;
+  }
+  .whatInfo-exit {
+    height: 48vh;
+  }
+  .whatInfo-exit-active {
+    height: 5vh;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .whatInfo-enter-active {
+    height: 37vh;
+  }
+  .whatInfo-exit {
+    height: 38vh;
+  }
+  .whatInfo-exit-active {
+    height: 5vh;
+  }
+}
+
+@media only screen and (min-width: 1021px) {
+  .whatInfo-enter-active {
+    height: 43vh;
+  }
+  .whatInfo-exit {
+    height: 43vh;
+  }
+  .whatInfo-exit-active {
+    height: 9vh;
+  }
+}
