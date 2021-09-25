@@ -31,6 +31,10 @@
   overflow: hidden;
 }
 
+/* screen width below 375 will use default settings above ^
+screen width above 375 will use the settings below 
+until the next max-width is reached. */
+
 @media only screen and (min-width: 375px) {
   .whatInfo-enter-active {
     height: 83vh;
