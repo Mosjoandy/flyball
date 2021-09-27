@@ -42,7 +42,7 @@ class Nav extends Component {
             <Container fluid className={
                 classnames({
                     "navUp--hidden": !this.state.visible
-                }, "navUp")}>
+                }, "navUp ")}>
                 <Navbar style={{ background: '#008000' }} >
                     <Container>
                         <Navbar.Collapse id="socialIconRow" className="d-flex justify-content-between" >

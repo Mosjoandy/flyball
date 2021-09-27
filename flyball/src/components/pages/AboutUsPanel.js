@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './AboutUsPanel.css';
-import aboutUsTitle from "../../images/aboutUsTitle.png";
-import { Container, Row, Col, Image, Card } from "react-bootstrap";
+// import aboutUsTitle from "../../images/aboutUsTitle.png";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import ExpansionJutsuTwo from '../cardtext/ExpansionJutsuTwo.js'
 import ShrinkingJutsuTwo from '../cardtext/ShrinkingJutsuTwo.js'
 import { CSSTransition } from 'react-transition-group';
@@ -25,7 +25,7 @@ class AboutUsPanel extends Component {
             <Container fluid id="aboutDescription">
                 <Row>
                     <Col>
-                        <Image src={aboutUsTitle}
+                        {/* <Image src={aboutUsTitle}
                             style={{
                                 width: '50%',
                                 marginLeft: 'auto',
@@ -33,8 +33,11 @@ class AboutUsPanel extends Component {
                                 display: 'block',
                                 paddingTop: '4vh',
                                 paddingBottom: '2vh'
-                            }} />
-                        <Card.Title style={{ fontWeight: '600', color: '#008000' }}>
+                            }} /> */}
+                        <Card.Text className="text-center aboutUsTitle negative-margin mistral-font">
+                            About Us
+                        </Card.Text>
+                        <Card.Title className='aboutUsTitleSecondary' style={{ fontWeight: '600', color: '#008000' }}>
                             The Usual Suspects is the only flyball club in the South Bay
                             Area of Los Angeles
                         </Card.Title>

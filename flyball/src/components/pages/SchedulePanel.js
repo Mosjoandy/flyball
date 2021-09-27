@@ -12,7 +12,7 @@ function SchedulePanel() {
         <Container className="bgWhite" fluid>
             <Row>
                 <Col>
-                    <Card.Text style={{ marginTop: '2vh', marginBottom: '3vh' }}>
+                    <Card.Text className='text-center' style={{ marginTop: '2vh', marginBottom: '3vh' }}>
                         Team Practice is currently Tuesday Nights from 7:00pm to 9:00pm during
                         warmer months
                     </Card.Text>
@@ -21,7 +21,7 @@ function SchedulePanel() {
             </Row>
             <Row>
                 <div className="d-grid gap-2" style={{ marginTop: '3vh', marginBottom: '3vh' }}>
-                    <Button variant="success" size='lg' onClick={() => setModalShow(true)}>
+                    <Button variant="success" className='border-dark border-2' size='lg' onClick={() => setModalShow(true)}>
                         Experienced Schedule
                     </Button>
                     <ExperiencedModal
@@ -29,7 +29,7 @@ function SchedulePanel() {
                         onHide={() => setModalShow(false)}
                     />
 
-                    <Button variant="success" size='lg' onClick={() => setModalShow2(true)}>
+                    <Button variant="success" className='border-dark border-2' size='lg' onClick={() => setModalShow2(true)}>
                         First-Timer Schedule
                     </Button>
                     <FirstTimerModal

@@ -35,7 +35,6 @@ class WhatPanel extends Component {
                     </Col>
                 </Row>
 
-
                 {this.tora ?
                     null
                     :
@@ -55,11 +54,6 @@ class WhatPanel extends Component {
                         <ExpansionJutsu />
                     </div>
                 </CSSTransition>
-
-
-
-
-
 
                 <Row style={{ marginTop: '2vh', position: 'relative', zIndex: '8889' }}>
                     <video autoPlay loop muted>

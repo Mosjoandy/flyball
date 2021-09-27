@@ -7,7 +7,7 @@ import WhatPanel from "./components/pages/WhatPanel.js";
 import AboutUsPanel from "./components/pages/AboutUsPanel.js";
 import ScheduleTitle from "./components/pages/ScheduleTitle.js";
 import SchedulePanel from "./components/pages/SchedulePanel.js";
-import CompetitionPanel from "./components/pages/CompetitionPanel.js";
+// import CompetitionPanel from "./components/pages/CompetitionPanel.js";
 import Contact from "./components/pages/Contact";
 import TheTeam from "./components/pages/TheTeam";
 // import * as Page from './components/pages';
@@ -28,7 +28,7 @@ function App() {
             <AboutUsPanel />
             <ScheduleTitle />
             <SchedulePanel />
-            <CompetitionPanel />
+            {/* <CompetitionPanel /> */}
             <TheTeam />
             <Contact />
           </Route>
