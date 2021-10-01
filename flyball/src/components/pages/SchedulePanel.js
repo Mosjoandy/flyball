@@ -9,7 +9,7 @@ function SchedulePanel() {
 
 
     return (
-        <Container className="bgWhite" fluid>
+        <Container className="bgBlack" fluid>
             <Row>
                 <Col>
                     <Card.Text className='text-center' style={{ marginTop: '2vh', marginBottom: '3vh' }}>

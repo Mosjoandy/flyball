@@ -3,8 +3,8 @@ import './AboutUsPanel.css';
 // import aboutUsTitle from "../../images/aboutUsTitle.png";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import ExpansionJutsuTwo from '../cardtext/ExpansionJutsuTwo.js'
-import ShrinkingJutsuTwo from '../cardtext/ShrinkingJutsuTwo.js'
-import { CSSTransition } from 'react-transition-group';
+// import ShrinkingJutsuTwo from '../cardtext/ShrinkingJutsuTwo.js'
+// import { CSSTransition } from 'react-transition-group';
 
 class AboutUsPanel extends Component {
     constructor(props) {
@@ -37,13 +37,14 @@ class AboutUsPanel extends Component {
                         <Card.Text className="text-center aboutUsTitle negative-margin mistral-font">
                             About Us
                         </Card.Text>
-                        <Card.Title className='aboutUsTitleSecondary' style={{ fontWeight: '600', color: '#008000' }}>
+                        <Card.Title className='aboutUsTitleSecondary text-center' style={{ fontWeight: '600', color: '#008000' }}>
                             The Usual Suspects is the only flyball club in the South Bay
                             Area of Los Angeles
                         </Card.Title>
-                        <Row>
-                            <Col>
-                                {this.tora ?
+                        <Row style={{ marginBottom: '3vh' }}>
+                            <Col >
+                                <ExpansionJutsuTwo />
+                                {/* {this.tora ?
                                     null
                                     :
                                     <div onClick={() => this.setState({ tori: this.tori = true })}>
@@ -61,7 +62,7 @@ class AboutUsPanel extends Component {
                                     <div onClick={() => this.setState({ tori: this.tori = false })}>
                                         <ExpansionJutsuTwo />
                                     </div>
-                                </CSSTransition>
+                                </CSSTransition> */}
                             </Col>
                         </Row>
                     </Col>

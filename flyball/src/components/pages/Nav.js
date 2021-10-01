@@ -48,13 +48,13 @@ class Nav extends Component {
                         <Navbar.Collapse id="socialIconRow" className="d-flex justify-content-between" >
 
                             <Navbar.Brand>
-                                <a href="https://www.instagram.com/theusualsuspectsfc/">
+                                <a href="https://www.instagram.com/theusualsuspectsfc/" target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src={Instagram}
                                         style={{ height: '30px', width: '30px', margin: '0 10px' }}
                                     />
                                 </a>
-                                <a href="https://www.facebook.com/pg/theusualsuspectsfc/">
+                                <a href="https://www.facebook.com/pg/theusualsuspectsfc/" target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src={Facebook}
                                         style={{ height: '30px', width: '30px' }}

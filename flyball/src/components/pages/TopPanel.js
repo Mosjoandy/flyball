@@ -1,33 +1,49 @@
-import React from 'react';
+import React, { Component } from 'react';
 // import './TopPanel.css';
 import Logo1 from "../../images/Logo1.png";
+import Logo2 from "../../images/Logo2.png";
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
 
-function TopPanel() {
-    return (
-        <Container fluid>
-            <Row>
-                <Col sm={12} xl>
-                    <Image src={Logo1}
-                        style={{
-                            width: '75%',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                            display: 'block',
-                            paddingTop: '7vh'
-                        }} />
-                    <Card.Body className="text-center">
-                        <Card.Title style={{ color: '#008000' }}>
-                            Welcome to The Usual Suspects flyball dog team
-                        </Card.Title>
-                        <Card.Text>
-                            Dogs of all shapes and sizes are welcome
-                        </Card.Text>
-                    </Card.Body>
-                </Col>
-            </Row>
-        </Container>
-    );
+class TopPanel extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            Logos: [Logo1, Logo2]
+        };
+    };
+
+    render() {
+        const hijutsu = Math.floor(Math.random() * 2)
+        return (
+            <Container fluid>
+                <Row>
+                    <Col sm={12} xl>
+
+                        <Image src={this.state.Logos[hijutsu]}
+                            style={{
+                                width: '35%',
+                                marginLeft: 'auto',
+                                marginRight: 'auto',
+                                display: 'block',
+                                paddingTop: '9vh'
+                            }} />
+                        <Card.Body className="text-center">
+                            <Card.Title style={{ color: '#008000' }}>
+                                Welcome to The Usual Suspects flyball dog team
+                            </Card.Title>
+                            <Card.Text>
+                                Dogs of all shapes and sizes are welcome
+                            </Card.Text>
+                        </Card.Body>
+                    </Col>
+                </Row>
+            </Container>
+        );
+    };
 };
+
+
+
 
 export default TopPanel
