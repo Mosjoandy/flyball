@@ -1,5 +1,6 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 .teamTitle {
-    font-size:10vh;
-    /* font-size: xx-large; */
+  font-size: 10vh;
+  /* font-size: xx-large; */
 }
