@@ -1,6 +1,15 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
-
 .teamTitle {
   font-size: 10vh;
   /* font-size: xx-large; */
+}
+
+.image-gallery-description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem !important;
+  bottom: 70px;
+  color: #fff;
+  left: 0;
+  right: 0;
+  background: none;
 }

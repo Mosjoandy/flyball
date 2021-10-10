@@ -6,7 +6,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 class TheTeam extends Component {
   render() {
-    const rngSlideStart = Math.floor(Math.random() * 4);
+    const rngSlideStart = Math.floor(Math.random() * 10);
 
     return (
       <Container fluid id="theTeam">
@@ -18,25 +18,12 @@ class TheTeam extends Component {
           </Col>
         </Row>
         <Row>
-          <Col>
-            <Card.Title
-              className="text-center"
-              style={{
-                fontWeight: "600",
-                color: "#008000",
-                paddingBottom: "3vh",
-              }}
-            >
-              Coming Soon!
-            </Card.Title>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
+          <Col >
             <ImageGallery
               showPlayButton={false}
               autoPlay={true}
               startIndex={rngSlideStart}
+              slideDuration={500}
               showFullscreenButton={false}
               items={imageData}
             />
