@@ -30,7 +30,7 @@ class TopPanel extends Component {
                             }} />
                         <Card.Body className="text-center">
                             <Card.Title style={{ color: '#008000' }}>
-                                Welcome to The Usual Suspects flyball dog team
+                                Welcome To The Usual Suspects Flyball Dog Team
                             </Card.Title>
                             <Card.Text>
                                 Dogs of all shapes and sizes are welcome

@@ -7,7 +7,7 @@ function GoogleEmbed() {
     return (
         <Container fluid>
             <Card.Title>
-                <h2 className="text-center">At the El Segundo Recreation Park</h2>
+                <h2 className="text-center">El Segundo Recreation Park</h2>
             </Card.Title>
             <a className="text-center" samesite="none" href="https://goo.gl/maps/6RvoezVppmigL1VG8" target="_blank" rel="noopener noreferrer">
                 <Card.Text style={{ marginBottom: '2vh', color: 'white', textDecoration: 'underline white' }}>{addy}</Card.Text>

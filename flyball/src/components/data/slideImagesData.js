@@ -10,6 +10,7 @@ import sparky1 from "../../images/teampics/Sparky_retired.jpg";
 import toby1 from "../../images/teampics/Toby_retired.jpg";
 import gypsy1 from "../../images/teampics/Gypsy.jpg";
 import indy1 from "../../images/teampics/Indy.jpg";
+import sprocket1 from "../../images/teampics/Sprocket.jpg";
 
 const imageData = [
   {
@@ -71,6 +72,11 @@ const imageData = [
     original: indy1,
     thumbnail: indy1,
     description: "Indy",
+  },
+  {
+    original: sprocket1,
+    thumbnail: sprocket1,
+    description: "Sprocket"
   }
 ];
 
