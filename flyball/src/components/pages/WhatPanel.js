@@ -55,8 +55,8 @@ class WhatPanel extends Component {
                     </div>
                 </CSSTransition>
 
-                <Row style={{ marginTop: '2vh', position: 'relative', zIndex: '8889' }}>
-                    {/* <video
+                {/* <Row style={{ marginTop: '2vh', position: 'relative', zIndex: '8889' }}>
+                    <video
                         autoPlay
                         muted
                         src={flyballVid}
@@ -64,9 +64,9 @@ class WhatPanel extends Component {
                         type="video/mp4"
                     >
                         Your browser does not like this flyball video!
-                    </video> */}
-                    <YoutubeEmbed embedId="oklyzU9uS18?autoplay=1&controls=0&mute=1" />
-                </Row>
+                    </video>
+                    <YoutubeEmbed embedId="oklyzU9uS18?playlist=oklyzU9uS18&autoplay=1&controls=0&mute=1&rel=0&loop=1" />
+                </Row> */}
             </Container>
         );
     };
