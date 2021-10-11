@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './WhatPanel.css';
 import { Container, Row, Col } from "react-bootstrap";
-import flyballVid from '../../images/flyballmute.mp4'
+// import flyballVid from '../../images/flyballmute.mp4'
 import YoutubeEmbed from "./../youtube/YoutubeEmbed.js";
 import ExpansionJutsu from '../cardtext/ExpansionJutsu.js';
 import ShrinkingJutsu from '../cardtext/ShrinkingJutsu.js';
@@ -56,15 +56,16 @@ class WhatPanel extends Component {
                 </CSSTransition>
 
                 <Row style={{ marginTop: '2vh', position: 'relative', zIndex: '8889' }}>
-                    <video
+                    {/* <video
                         autoPlay
+                        muted
                         src={flyballVid}
                         title="The Usual Suspects in Action"
                         type="video/mp4"
                     >
                         Your browser does not like this flyball video!
-                    </video>
-
+                    </video> */}
+                    <YoutubeEmbed embedId="oklyzU9uS18?autoplay=1&controls=0&mute=1" />
                 </Row>
             </Container>
         );
