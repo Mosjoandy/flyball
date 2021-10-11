@@ -56,9 +56,14 @@ class WhatPanel extends Component {
                 </CSSTransition>
 
                 <Row style={{ marginTop: '2vh', position: 'relative', zIndex: '8889' }}>
-                    <video autoPlay loop muted>
-                        <source src={flyballVid} type="video/mp4" />
-                    </video>
+                    <div className="video-responsive" >
+                        <iframe
+                            frameBorder="0"
+                            muted
+                            src={flyballVid}
+                            title="The Usual Suspects in Action">
+                        </iframe>
+                    </div>
                 </Row>
             </Container>
         );

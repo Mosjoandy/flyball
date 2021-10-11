@@ -8,6 +8,8 @@ import luke1 from "../../images/teampics/Luke.jpg";
 import marlee1 from "../../images/teampics/Marlee_retired.jpg";
 import sparky1 from "../../images/teampics/Sparky_retired.jpg";
 import toby1 from "../../images/teampics/Toby_retired.jpg";
+import gypsy1 from "../../images/teampics/Gypsy.jpg";
+import indy1 from "../../images/teampics/Indy.jpg";
 
 const imageData = [
   {
@@ -59,6 +61,16 @@ const imageData = [
     original: toby1,
     thumbnail: toby1,
     description: "Toby",
+  },
+  {
+    original: gypsy1,
+    thumbnail: gypsy1,
+    description: "Gypsy",
+  },
+  {
+    original: indy1,
+    thumbnail: indy1,
+    description: "Indy",
   }
 ];
 

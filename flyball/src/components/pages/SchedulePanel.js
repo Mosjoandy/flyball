@@ -14,7 +14,10 @@ function SchedulePanel() {
                 <Col>
                     <Card.Text className='text-center' style={{ marginTop: '2vh', marginBottom: '3vh' }}>
                         Team Practice is currently Tuesday Nights from 7:00pm to 9:00pm during
-                        warmer months
+                        warmer months.
+                    </Card.Text>
+                    <Card.Text className='text-center' style={{ marginTop: '2vh', marginBottom: '3vh' }}>
+                       During colder months, we practice Saturday mornings 9:30am to 11:30am.
                     </Card.Text>
                     <GoogleEmbed />
                 </Col>
