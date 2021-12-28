@@ -11,6 +11,11 @@ import toby1 from "../../images/teampics/Toby_retired.jpg";
 import gypsy1 from "../../images/teampics/Gypsy.jpg";
 import indy1 from "../../images/teampics/Indy.jpg";
 import sprocket1 from "../../images/teampics/Sprocket.jpg";
+import mrfurrley1 from "../../images/teampics/MrFurrley.jpg";
+
+// Tools:
+// https://bulkresizephotos.com/en
+// https://heictojpg.com/
 
 const imageData = [
   {
@@ -61,7 +66,7 @@ const imageData = [
   {
     original: toby1,
     thumbnail: toby1,
-    description: "Toby",
+    description: "Toby (Retired)",
   },
   {
     original: gypsy1,
@@ -77,6 +82,11 @@ const imageData = [
     original: sprocket1,
     thumbnail: sprocket1,
     description: "Sprocket"
+  },
+  {
+    original: mrfurrley1,
+    thumbnail: mrfurrley1,
+    description: "Mr Furrley"
   }
 ];
 

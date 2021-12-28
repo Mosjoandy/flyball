@@ -29,9 +29,9 @@ class WhatPanel extends Component {
                     <Col className="text-center">
                         <h2 style={{ fontWeight: 'bold' }}>What is flyball?</h2>
                         <YoutubeEmbed embedId="mZ9ugj73Oqw" />
-                        <footer className="blockquote-footer" style={{ marginTop: '10px' }}>
+                        <div className="" style={{ marginTop: '10px', marginBottom: '10px', color: 'grey' }}>
                             We do not own the rights to this video
-                        </footer>
+                        </div>
                     </Col>
                 </Row>
 
