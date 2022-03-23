@@ -35,7 +35,7 @@ class AboutUsPanel extends Component {
                                 paddingTop: '4vh',
                                 paddingBottom: '2vh'
                             }} /> */}
-                        <Card.Text className="text-center aboutUsTitle negative-margin mistral-font">
+                        <Card.Text className="text-center aboutUsTitle negative-margin gilligan-font">
                             About Us
                         </Card.Text>
                         <Card.Title className='aboutUsTitleSecondary text-center' style={{ fontWeight: '600', color: '#008000' }}>

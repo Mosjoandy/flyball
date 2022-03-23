@@ -7,6 +7,8 @@ function GoogleEmbed() {
     return (
         <Container fluid>
             <Card.Title>
+                <h2 className="text-center">Bowling Green Lawn</h2>
+                <h6 className="text-center">(near the tennis courts)</h6>
                 <h2 className="text-center">El Segundo Recreation Park</h2>
             </Card.Title>
             <a className="text-center" samesite="none" href="https://goo.gl/maps/6RvoezVppmigL1VG8" target="_blank" rel="noopener noreferrer">

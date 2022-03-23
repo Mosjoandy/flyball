@@ -27,9 +27,10 @@ class WhatPanel extends Component {
             <Container fluid>
                 <Row>
                     <Col className="text-center">
-                        <h2 style={{ fontWeight: 'bold' }}>What is flyball?</h2>
+                    
+                        <h2 className="text-center aboutUsTitle gilligan-font">What is flyball?</h2>
                         <YoutubeEmbed embedId="mZ9ugj73Oqw" />
-                        <div className="" style={{ marginTop: '10px', marginBottom: '10px', color: 'grey' }}>
+                        <div className="" style={{ marginTop: '10px', marginBottom: '10px', color: 'grey', fontSize: '8px' }}>
                             We do not own the rights to this video
                         </div>
                     </Col>

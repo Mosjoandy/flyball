@@ -9,7 +9,7 @@ function Contact() {
     return (
         <Container className="bgBlack text-center" fluid id='contact' style={{ paddingTop: '4vh', paddingBottom: '4vh' }}>
 
-            <h2 style={{ fontWeight: 'bold', color: '#008000' }}>Contact</h2>
+            <h2 style={{ fontWeight: 'bold', color: '#008000', paddingBottom: '4vh' }} className="text-center aboutUsTitle negative-margin gilligan-font">Contact</h2>
 
             <Card.Text>We are always looking for new members interested in bringing their pup!</Card.Text>
             <Card.Body>

@@ -3,6 +3,11 @@
   src: local("Mistral"), url(./fonts/Mistral/MISTRAL.TTF) format("truetype");
 }
 
+@font-face {
+  font-family: "Gilligan";
+  src: local("Gilligan"), url(./fonts/GILLIGAN.TTF) format("truetype");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -14,6 +19,11 @@ body {
 
 .mistral-font {
   font-family: Mistral, serif;
+  color: #008000 !important;
+}
+
+.gilligan-font {
+  font-family: Gilligan, serif;
   color: #008000 !important;
 }
 

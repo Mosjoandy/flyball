@@ -8,6 +8,7 @@ import AboutUsPanel from "./components/pages/AboutUsPanel.js";
 import ScheduleTitle from "./components/pages/ScheduleTitle.js";
 import SchedulePanel from "./components/pages/SchedulePanel.js";
 // import CompetitionPanel from "./components/pages/CompetitionPanel.js";
+import Sponsors from "./components/pages/Sponsors.js";
 import Contact from "./components/pages/Contact";
 import TheTeam from "./components/pages/TheTeam";
 // import * as Page from './components/pages';
@@ -24,12 +25,12 @@ function App() {
           <Route exact path="/">
             <Nav />
             <TopPanel />
-            <WhatPanel />
             <AboutUsPanel />
             <ScheduleTitle />
             <SchedulePanel />
-            {/* <CompetitionPanel /> */}
+            <WhatPanel />
             <TheTeam />
+            <Sponsors />
             <Contact />
           </Route>
         </div>

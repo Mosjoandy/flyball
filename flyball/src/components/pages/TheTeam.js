@@ -12,7 +12,7 @@ class TheTeam extends Component {
       <Container fluid id="theTeam">
         <Row>
           <Col>
-            <Card.Text className="text-center aboutUsTitle negative-margin mistral-font">
+            <Card.Text className="text-center aboutUsTitle negative-margin gilligan-font">
               The Team
             </Card.Text>
           </Col>

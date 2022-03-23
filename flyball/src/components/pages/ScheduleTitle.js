@@ -7,7 +7,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 function ScheduleTitle() {
     return (
         <Container className="bgBlack" fluid id='activities'>
-            <Card.Text className="text-center aboutUsTitle negative-margin mistral-font">
+            <Card.Text className="text-center aboutUsTitle negative-margin gilligan-font">
                 Activities
             </Card.Text>
             <Row>

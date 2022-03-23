@@ -52,6 +52,14 @@ function SchedulePanel() {
                         onHide={() => setModalShow3(false)}
                     />
 
+                    <Button variant="success" className='border-dark border-2' size='lg' onClick={() => setModalShow2(true)}>
+                        First-Timer Schedule
+                    </Button>
+                    <FirstTimerModal
+                        show={modalShow2}
+                        onHide={() => setModalShow2(false)}
+                    />
+
                     <Button variant="success" className='border-dark border-2' size='lg' onClick={() => setModalShow(true)}>
                         Experienced Schedule
                     </Button>
@@ -60,16 +68,9 @@ function SchedulePanel() {
                         onHide={() => setModalShow(false)}
                     />
 
-                    <Button variant="success" className='border-dark border-2' size='lg' onClick={() => setModalShow2(true)}>
-                        First-Timer Schedule
-                    </Button>
-                    <FirstTimerModal
-                        show={modalShow2}
-                        onHide={() => setModalShow2(false)}
-                    />
                 </div>
             </Row>
-        </Container >
+        </Container>
     );
 };
 
@@ -139,9 +140,9 @@ function FirstTimerModal(props) {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <ListGroup.Item>Dog owners are welcome to visit us without your dog on any practice day to check out the sport, meet the team members, and get answers to any questions you may have</ListGroup.Item>
-                <ListGroup.Item>Bring your pup and a dog crate to their first two Intro to Flyball classes (held on the first two practices of each month)</ListGroup.Item>
-                <ListGroup.Item>Continue to Beginner classes for $120, which include a one-year membership</ListGroup.Item>
+                <ListGroup.Item>Dog owners are welcome to visit us without their dog on any practice day to check out the sport, meet the team members, and get answers to any questions you may have</ListGroup.Item>
+                <ListGroup.Item>Bring your pup and a dog crate to their first two Intro to Flyball classes (held on the first practice of each month)</ListGroup.Item>
+                <ListGroup.Item>Continue to Beginner classes for $120, which includes a one-year membership</ListGroup.Item>
                 <ListGroup.Item>We will work with you and teach your dog everything they need to know to master the skills of flyball</ListGroup.Item>
                 <ListGroup.Item>Weekly practice is $5 per session (used for park rental fees)</ListGroup.Item>
             </Modal.Body>
