@@ -1,0 +1,20 @@
+.navUp {
+    width:100% !important;
+    position: fixed;
+    top: 0;
+    transition: top .8s;
+    background-color: #008000;
+    border-bottom: black solid 2px;
+    border-left: black solid 2px;
+    border-right: black solid 2px;
+    z-index: 99999;
+    max-width: 1024px;
+  }
+  
+  .navUp--hidden {
+    top: -200px;
+  }
+
+  .dropdown-menu {
+    min-width: auto !important;
+  }

@@ -1,0 +1,54 @@
+.LoadImage{
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    width: 100vw;
+    margin: auto;
+   
+}
+
+.LoadImage h1{
+    color: black !important;
+    font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 720px) {
+    .LoadImage{
+       
+        position: relative;
+        top: 0;
+        width: 48%;
+        margin: auto;
+      
+       
+    }
+  }
+
+@media only screen and (min-width: 800px) {
+    .LoadImage{
+       
+        position: relative;
+        top: 0;
+        width: 50%;
+        margin: auto;
+      
+       
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .LoadImage{
+       
+        position: relative;
+        top: 0;
+        width: 75%;
+        margin: auto;
+      
+       
+    }
+  }
+  
+
+.LoadImage img{
+    width: 100%;
+}

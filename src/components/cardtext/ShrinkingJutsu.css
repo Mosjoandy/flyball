@@ -1,0 +1,9 @@
+#fadeOne {
+    /* color: red; */
+    /* opacity: .65; */
+    /* -webkit-mask-image: -webkit-linear-gradient(left, red, green, blue) */
+    background-image: linear-gradient(180deg,#000000 50%,rgba(0,0,0,0));
+    -webkit-background-clip: text;
+        background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

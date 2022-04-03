@@ -1,0 +1,157 @@
+.aboutUsTitle {
+  font-size: 70px;
+}
+
+.aboutInfo-enter {
+  height: 15vh;
+  /* transform: scale(0.9); */
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.aboutInfo-enter-active {
+  height: 125vh;
+  transform: translateX(0);
+  transition: height 1s ease, transform 1s ease;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.aboutInfo-exit {
+  height: 125vh;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.aboutInfo-exit-active {
+  height: 15vh;
+  transform: translateX(0);
+  transition: height 1s, transform 1s;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+/* screen width below 375 will use default settings above ^
+screen width above 375 will use the settings below 
+until the next max-width is reached. */
+
+@media only screen and (min-width: 375px) {
+  .aboutInfo-enter-active {
+    height: 83vh;
+  }
+  .aboutInfo-exit {
+    height: 85vh;
+  }
+  .aboutInfo-exit-active {
+    height: 15vh;
+  }
+  .aboutUsTitle {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .aboutInfo-enter-active {
+    height: 80vh;
+  }
+  .aboutInfo-exit {
+    height: 80vh;
+  }
+  .aboutInfo-exit-active {
+    height: 15vh;
+  }
+  .aboutUsTitle {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .aboutInfo-enter-active {
+    height: 70vh;
+  }
+  .aboutInfo-exit {
+    height: 70vh;
+  }
+  .aboutInfo-exit-active {
+    height: 15vh;
+  }
+  .aboutUsTitleSecondary {
+    text-align: center;
+  }
+  .aboutUsTitle {
+    font-size: 100x;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .aboutInfo-enter-active {
+    height: 65vh;
+  }
+  .aboutInfo-exit {
+    height: 65vh;
+  }
+  .aboutInfo-exit-active {
+    height: 15vh;
+  }
+  .aboutUsTitleSecondary {
+    text-align: center;
+  }
+  .aboutUsTitle {
+    font-size: 110px;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .aboutInfo-enter-active {
+    height: 49vh;
+  }
+  .aboutInfo-exit {
+    height: 48vh;
+  }
+  .aboutInfo-exit-active {
+    height: 5vh;
+  }
+  .aboutUsTitleSecondary {
+    text-align: center;
+  }
+  .aboutUsTitle {
+    font-size: 120px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .aboutInfo-enter-active {
+    height: 37vh;
+  }
+  .aboutInfo-exit {
+    height: 38vh;
+  }
+  .aboutInfo-exit-active {
+    height: 5vh;
+  }
+  .aboutUsTitleSecondary {
+    text-align: center;
+  }
+  .aboutUsTitle {
+    font-size: 120px;
+  }
+}
+
+@media only screen and (min-width: 1021px) {
+  .aboutInfo-enter-active {
+    height: 43vh;
+  }
+  .aboutInfo-exit {
+    height: 43vh;
+  }
+  .aboutInfo-exit-active {
+    height: 9vh;
+  }
+  .aboutUsTitleSecondary {
+    text-align: center;
+  }
+}
