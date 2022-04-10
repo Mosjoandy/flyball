@@ -5,6 +5,9 @@
     height: 0;
   }
   
+
+  .ytp-spinner { display:none;}
+
   .video-responsive iframe {
     left: 0;
     top: 0;

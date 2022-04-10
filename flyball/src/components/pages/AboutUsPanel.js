@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './AboutUsPanel.css';
 // import aboutUsTitle from "../../images/aboutUsTitle.png";
 import YoutubeEmbed from "./../youtube/YoutubeEmbed.js";
+import YoutubeParallax from '../youtube/YoutubeParallax';
 import { Container, Row, Col, Card } from "react-bootstrap";
 import ExpansionJutsuTwo from '../cardtext/ExpansionJutsuTwo.js'
 // import ShrinkingJutsuTwo from '../cardtext/ShrinkingJutsuTwo.js'
@@ -80,7 +81,8 @@ class AboutUsPanel extends Component {
                         Your browser does not like this flyball video!
                     </video> */}
                     <Col>
-                        <YoutubeEmbed embedId="oklyzU9uS18?playlist=oklyzU9uS18&autoplay=1&controls=0&mute=1&rel=0&loop=1" />
+                        <YoutubeParallax setIsLoaded={this.props.setIsLoaded} />
+                        {/* <YoutubeEmbed embedId="oklyzU9uS18?playlist=oklyzU9uS18&autoplay=1&controls=0&mute=1&rel=0&loop=1" /> */}
                     </Col>
                 </Row>
             </Container>

@@ -27,6 +27,10 @@ body {
   color: #008000 !important;
 }
 
+.widescreen {
+  aspect-ratio: 16/9;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

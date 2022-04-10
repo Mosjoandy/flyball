@@ -10,6 +10,7 @@
   color: #000000;
 }
 
+.ytp-spinner { display:none;}
 .negative-margin {
   margin-bottom: -1.5rem;
 }
@@ -52,6 +53,22 @@
   }
 }
 
+
+.displayNone{
+  display: none;
+}
+
+/* blurryeffect */
+
+/* .blurredBG{
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+} */
+
+
+.loadingImage{
+background-color: white;
+}
 
 /* background colors */
 
