@@ -46,7 +46,6 @@ Firebase Deployment: https://theusualsuspectsflyball.com/
 ### CDN's
 
 - Bootstrap v5.1.0 - [get bootstrap](https://react-bootstrap.github.io/)
-- JQuery v3.3.1 - [JQuery](http://jquery.com/)
 
 ### NPM's
 
