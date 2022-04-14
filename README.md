@@ -10,7 +10,7 @@ This is a single-page, mobile-first app that presents visitors with information 
 
 ## Process
 
-Firebase Deployment: theusualsuspectsflyball.com
+Firebase Deployment: https://theusualsuspectsflyball.com/#theTeam
 
 - When users click on social media accounts, new windows will open with directly redirected with assumed credential logins.
 
