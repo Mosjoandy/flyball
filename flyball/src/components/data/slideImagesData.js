@@ -12,6 +12,10 @@ import gypsy1 from "../../images/teampics/Gypsy.jpg";
 import indy1 from "../../images/teampics/Indy.jpg";
 import sprocket1 from "../../images/teampics/Sprocket.jpg";
 import mrfurrley1 from "../../images/teampics/MrFurrley.jpg";
+import julius1 from "../../images/teampics/Julius.jpg";
+import umka1 from "../../images/teampics/Umka.jpg";
+
+
 
 // Tools:
 // https://bulkresizephotos.com/en
@@ -87,6 +91,16 @@ const imageData = [
     original: mrfurrley1,
     thumbnail: mrfurrley1,
     description: "Mr Furrley"
+  },
+  {
+    original: julius1,
+    thumbnail: julius1,
+    description: "Julius",
+  },
+  {
+    original: umka1,
+    thumbnail: umka1,
+    description: "Umka",
   }
 ];
 

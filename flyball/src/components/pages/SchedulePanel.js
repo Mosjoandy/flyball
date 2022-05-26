@@ -141,10 +141,11 @@ function FirstTimerModal(props) {
             </Modal.Header>
             <Modal.Body>
                 <ListGroup.Item>Dog owners are welcome to visit us without their dog on any practice day to check out the sport, meet the team members, and get answers to any questions you may have</ListGroup.Item>
-                <ListGroup.Item>Bring your pup and a dog crate to their first two Intro to Flyball classes (held on the first practice of each month)</ListGroup.Item>
-                <ListGroup.Item>Continue to Beginner classes for $120, which includes a one-year membership</ListGroup.Item>
-                <ListGroup.Item>We will work with you and teach your dog everything they need to know to master the skills of flyball</ListGroup.Item>
+                <ListGroup.Item>Please reach out to be scheduled into your first team practice!</ListGroup.Item>
+                <ListGroup.Item>Team will support your training. Basic handling and obedience skills should be worked on separately.</ListGroup.Item>
                 <ListGroup.Item>Weekly practice is $5 per session (used for park rental fees)</ListGroup.Item>
+                <ListGroup.Item>Trial period: $20 per month for first 2 months (to be applied to annual dues once a member).</ListGroup.Item>
+                <ListGroup.Item>Annual Club fees apply</ListGroup.Item>
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="success" onClick={props.onHide}>Close</Button>
