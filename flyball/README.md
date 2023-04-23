@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Flyball
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a single-page, mobile-first app that presents visitors with information pertaining to the Usual Suspects Flyball team. Users have access to social media links, information on the sport itself with videos, and google calender/map embeds.
 
-In the project directory, you can run:
+* * *
 
-### `yarn start`
+<img src="https://cdn.discordapp.com/attachments/524108256205864960/964267622386524170/unknown.png" width="480px">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Process
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Firebase Deployment: https://theusualsuspectsflyball.com/
 
-### `yarn test`
+- When users click on social media accounts, new windows will open with directly redirected with assumed credential logins.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://cdn.discordapp.com/attachments/524108256205864960/964267989874667670/unknown.png" width="480px">
 
-### `yarn build`
+- Navigation points to certain sections, using a smooth transition, users will autoscroll to the part of the page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://cdn.discordapp.com/attachments/524108256205864960/964268265545269279/unknown.png" width="480px">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Promotional video of the Usual Suspects Flyball team in action plays with auto-mute to bypass Safari/OSX autoblocking.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="https://cdn.discordapp.com/attachments/524108256205864960/964268919651192882/unknown.png" width="480px">
 
-### `yarn eject`
+- Google calender connected via google calender API to owner's google calender. This allows other users to view scheduling
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img src="https://cdn.discordapp.com/attachments/524108256205864960/964286077617705070/unknown.png" width="480px">
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Google maps embed with clickability in case users are viewing with their mobile devices. Clicking the links will open google maps or applied mapping application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<img src="https://cdn.discordapp.com/attachments/524108256205864960/964286360527716412/unknown.png" width="480px">
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Carousel showcasing each member's dog.
 
-## Learn More
+<img src="https://cdn.discordapp.com/attachments/524108256205864960/964286581907283999/unknown.png" width="480px">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* * *
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technology
 
-### Code Splitting
+- Google Firebase v9.1.0 - [Firebase](https://firebase.google.com/)
+- Facebook React v17.0.2 - [React](https://reactjs.org/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### CDN's
 
-### Analyzing the Bundle Size
+- Bootstrap v5.1.0 - [get bootstrap](https://react-bootstrap.github.io/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### NPM's
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- react-bootstrap v2.0.0-beta.6 - [npm i react-bootstrap](https://www.npmjs.com/package/react-bootstrap)
+- react-dom v17.0.2 - [npm i react-dom](https://www.npmjs.com/package/react-dom)
+- react-image-gallery v1.2.7 - [npm i react-image-gallery](https://www.npmjs.com/package/react-image-gallery)
+- react-router-dom v5.2.0 - [npm i react-router-dom](https://www.npmjs.com/package/react-router-dom)
+- react-transition-group v4.4.2 - [npm i react-transition-group](https://www.npmjs.com/package/react-transition-group)
