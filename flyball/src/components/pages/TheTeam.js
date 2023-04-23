@@ -6,7 +6,20 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 class TheTeam extends Component {
   render() {
-    const rngSlideStart = Math.floor(Math.random() * 10);
+    // const rngSlideStart = Math.floor(Math.random() * 10);
+    console.log(typeof(imageData));
+
+
+    function shuffle(sourceArray) {
+      for (var i = 0; i < sourceArray.length - 1; i++) {
+          var j = i + Math.floor(Math.random() * (sourceArray.length - i));
+  
+          var temp = sourceArray[j];
+          sourceArray[j] = sourceArray[i];
+          sourceArray[i] = temp;
+      }
+      return sourceArray;
+  }
 
     return (
       <Container fluid id="theTeam">
@@ -22,10 +35,10 @@ class TheTeam extends Component {
             <ImageGallery
               showPlayButton={false}
               autoPlay={true}
-              startIndex={rngSlideStart}
+              startIndex={0}
               slideDuration={500}
               showFullscreenButton={false}
-              items={imageData}
+              items={shuffle(imageData)}
             />
           </Col>
         </Row>
