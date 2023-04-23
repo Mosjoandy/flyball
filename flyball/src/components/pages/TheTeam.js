@@ -7,9 +7,9 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 class TheTeam extends Component {
   render() {
     // const rngSlideStart = Math.floor(Math.random() * 10);
-    console.log(typeof(imageData));
+   
 
-
+//shuffles the object to randomize the order of the dogs.
     function shuffle(sourceArray) {
       for (var i = 0; i < sourceArray.length - 1; i++) {
           var j = i + Math.floor(Math.random() * (sourceArray.length - i));
