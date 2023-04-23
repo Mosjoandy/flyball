@@ -6,6 +6,7 @@ import Facebook from "../../images/facebook.png";
 import Email from "../../images/email.png";
 
 function Contact() {
+    const year = new Date().getFullYear();
     return (
         <Container className="bgBlack text-center" fluid id='contact' style={{ paddingTop: '4vh', paddingBottom: '4vh' }}>
 
@@ -37,7 +38,7 @@ function Contact() {
                     />
                 </a>
             </Card.Body>
-            <Card.Text>Copyright © 2021</Card.Text>
+            <Card.Text>Copyright © {year}</Card.Text>
         </Container>
     );
 };

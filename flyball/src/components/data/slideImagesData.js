@@ -14,18 +14,25 @@ import sprocket1 from "../../images/teampics/Sprocket.jpg";
 import mrfurrley1 from "../../images/teampics/MrFurrley.jpg";
 import julius1 from "../../images/teampics/Julius.jpg";
 import umka1 from "../../images/teampics/Umka.jpg";
+import winnie from "../../images/teampics/Winnie.jpg";
 
 
 
 // Tools:
 // https://bulkresizephotos.com/en
 // https://heictojpg.com/
+// 480 x 640 Dimensions
 
 const imageData = [
   {
     original: charlie1,
     thumbnail: charlie1,
     description: "Charlie",
+  },
+  {
+    original: winnie,
+    thumbnail: winnie,
+    description: "Winnie",
   },
   {
     original: cody1,

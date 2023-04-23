@@ -37,7 +37,8 @@ function SchedulePanel() {
                     </Card>
 
                     {/* google map */}
-                    <GoogleEmbed />
+                    {/* <GoogleEmbed /> */}
+                    <h1 className="text-center" style={{ padding: '1vh 0 1vh 0'}}>Please contact us for our weekly practice location!</h1>
                 </Col>
             </Row>
 
@@ -144,7 +145,7 @@ function FirstTimerModal(props) {
                 <ListGroup.Item>Please reach out to be scheduled into your first team practice!</ListGroup.Item>
                 <ListGroup.Item>Team will support your training. Basic handling and obedience skills should be worked on separately.</ListGroup.Item>
                 <ListGroup.Item>Weekly practice is $5 per session (used for park rental fees)</ListGroup.Item>
-                <ListGroup.Item>Trial period: $20 per month for first 2 months (to be applied to annual dues once a member).</ListGroup.Item>
+                <ListGroup.Item>Trial period: $40 per month for first 2 months (to be applied to annual dues once a member).</ListGroup.Item>
                 <ListGroup.Item>Annual Club fees apply</ListGroup.Item>
             </Modal.Body>
             <Modal.Footer>
