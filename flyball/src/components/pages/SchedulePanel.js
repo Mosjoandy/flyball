@@ -1,12 +1,14 @@
 import React from 'react';
 // import './SchedulePanel.css';
-import { Container, Row, Col, Card, ListGroup, Button, Modal } from "react-bootstrap";
+import { Container, Row, Col, Card, ListGroup, Button, Modal, Image } from "react-bootstrap";
 import GoogleEmbed from './../googlemaps/GoogleEmbed.js'
+import CalendarCrossSite from "../../images/CalendarCrossSite.png"
 
 function SchedulePanel() {
     const [modalShow, setModalShow] = React.useState(false);
     const [modalShow2, setModalShow2] = React.useState(false);
     const [modalShow3, setModalShow3] = React.useState(false);
+    const [modalShow4, setModalShow4] = React.useState(false);
 
 
     return (
@@ -35,9 +37,19 @@ function SchedulePanel() {
                             }}>
                         </iframe>
                     </Card>
-
+                    <Card.Text className='text-center' style={{ marginTop: '2vh', marginBottom: '5vh' }}>
+                        Having trouble viewing the calendar?
+                        <br />
+                        <Button variant="secondary" className='border-dark border-2' size='lg' onClick={() => setModalShow4(true)}>
+                        ?
+                    </Button>
+                    <CalendarHelper
+                        show={modalShow4}
+                        onHide={() => setModalShow4(false)}
+                    />
+                    </Card.Text>
                     {/* google map */}
-                    {/* <GoogleEmbed /> */}
+                    <GoogleEmbed />
                     <h1 className="text-center" style={{ padding: '1vh 0 1vh 0'}}>Please contact us for our weekly practice location!</h1>
                 </Col>
             </Row>
@@ -145,7 +157,7 @@ function FirstTimerModal(props) {
                 <ListGroup.Item>Please reach out to be scheduled into your first team practice!</ListGroup.Item>
                 <ListGroup.Item>Team will support your training. Basic handling and obedience skills should be worked on separately.</ListGroup.Item>
                 <ListGroup.Item>Weekly practice is $5 per session (used for park rental fees)</ListGroup.Item>
-                <ListGroup.Item>Trial period: $40 per month for first 2 months (to be applied to annual dues once a member).</ListGroup.Item>
+                <ListGroup.Item>Trial period: $50 for four consecutive weeks.</ListGroup.Item>
                 <ListGroup.Item>Annual Club fees apply</ListGroup.Item>
             </Modal.Body>
             <Modal.Footer>
@@ -154,4 +166,39 @@ function FirstTimerModal(props) {
         </Modal>
     );
 };
+
+function CalendarHelper(props) {
+    return (
+        <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+        >
+            <Modal.Header closeButton>
+                <Modal.Title id="contained-modal-title-vcenter">
+                    Help! Calender isn't loading!
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                Your browser is blocking Google Maps.
+                <Image src={CalendarCrossSite}
+                    style={{
+                        width: '70%',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        display: 'block',
+                        paddingTop: '5vh',
+                        paddingBottom: '5vh'
+                    }} />
+
+                Open your browser Preferences/Privacy and uncheck "Prevent Cross-Site Tracking"
+            </Modal.Body>
+            <Modal.Footer>
+                <Button variant="success" onClick={props.onHide}>Close</Button>
+            </Modal.Footer>
+        </Modal>
+    );
+};
+
 export default SchedulePanel
