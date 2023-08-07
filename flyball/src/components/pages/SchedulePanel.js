@@ -41,16 +41,16 @@ function SchedulePanel() {
                         Having trouble viewing the calendar?
                         <br />
                         <Button variant="secondary" className='border-dark border-2' size='lg' onClick={() => setModalShow4(true)}>
-                        ?
-                    </Button>
-                    <CalendarHelper
-                        show={modalShow4}
-                        onHide={() => setModalShow4(false)}
-                    />
+                            ?
+                        </Button>
+                        <CalendarHelper
+                            show={modalShow4}
+                            onHide={() => setModalShow4(false)}
+                        />
                     </Card.Text>
                     {/* google map */}
                     <GoogleEmbed />
-                    <h1 className="text-center" style={{ padding: '1vh 0 1vh 0'}}>Please contact us for our weekly practice location!</h1>
+                    <h1 className="text-center" style={{ padding: '1vh 0 1vh 0' }}>Please contact us for our weekly practice location!</h1>
                 </Col>
             </Row>
 
@@ -180,18 +180,17 @@ function CalendarHelper(props) {
                     Help! Calender isn't loading!
                 </Modal.Title>
             </Modal.Header>
-            <Modal.Body>
+            <Modal.Body className="text-center">
                 Your browser is blocking Google Maps.
                 <Image src={CalendarCrossSite}
                     style={{
-                        width: '70%',
+                        width: '30vh',
                         marginLeft: 'auto',
                         marginRight: 'auto',
                         display: 'block',
                         paddingTop: '5vh',
                         paddingBottom: '5vh'
                     }} />
-
                 Open your browser Preferences/Privacy and uncheck "Prevent Cross-Site Tracking"
             </Modal.Body>
             <Modal.Footer>
