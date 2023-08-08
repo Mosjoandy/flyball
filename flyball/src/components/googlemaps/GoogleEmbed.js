@@ -3,11 +3,11 @@ import React from 'react';
 import { Container, Card } from "react-bootstrap";
 
 function GoogleEmbed() {
-    const addy = '401 Sheldon St, El Segundo, CA 90245'
+    const addy = '7700 E Spring St, Long Beach, CA 90815'
     return (
         <Container fluid>
             <Card.Title>
-                <h2 className="text-center">Pitchford Campanion Animal Village</h2>
+                <h2 className="text-center">spcaLA Long Beach</h2>
                 {/* <h6 className="text-center">(near the tennis courts)</h6> */}
                 {/* <h2 className="text-center">El Segundo Recreation Park</h2> */}
             </Card.Title>
