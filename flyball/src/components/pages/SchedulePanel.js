@@ -50,7 +50,7 @@ function SchedulePanel() {
                     </Card.Text>
                     {/* google map */}
                     <GoogleEmbed />
-                    <h1 className="text-center" style={{ padding: '1vh 0 1vh 0' }}>Please contact us for our weekly practice location!</h1>
+                    {/* <h1 className="text-center" style={{ padding: '1vh 0 1vh 0' }}>Please contact us for our weekly practice location!</h1> */}
                 </Col>
             </Row>
 
@@ -127,9 +127,11 @@ function ExperiencedModal(props) {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <ListGroup.Item>Drop-in practices held Weekly</ListGroup.Item>
+                {/* <ListGroup.Item>Drop-in practices held Weekly</ListGroup.Item> */}
+                <ListGroup.Item>Practices held weekly</ListGroup.Item>
                 <ListGroup.Item>Bring a dog crate</ListGroup.Item>
-                <ListGroup.Item>Practice is $5 per session (used for park rental fees)</ListGroup.Item>
+                {/* <ListGroup.Item>Practice is $5 per session (used for park rental fees)</ListGroup.Item> */}
+                <ListGroup.Item>Drop-in fees apply to non-members - please reach out for confirmation</ListGroup.Item>
                 <ListGroup.Item>Annual Club fees apply</ListGroup.Item>
             </Modal.Body>
             <Modal.Footer>
@@ -154,10 +156,10 @@ function FirstTimerModal(props) {
             </Modal.Header>
             <Modal.Body>
                 <ListGroup.Item>Dog owners are welcome to visit us without their dog on any practice day to check out the sport, meet the team members, and get answers to any questions you may have</ListGroup.Item>
-                <ListGroup.Item>Please reach out to be scheduled into your first team practice!</ListGroup.Item>
+                <ListGroup.Item>Please reach out to be scheduled into your first team practice</ListGroup.Item>
                 <ListGroup.Item>Team will support your training. Basic handling and obedience skills should be worked on separately.</ListGroup.Item>
                 <ListGroup.Item>Weekly practice is $5 per session (used for park rental fees)</ListGroup.Item>
-                <ListGroup.Item>Trial period: $50 for four consecutive weeks.</ListGroup.Item>
+                {/* <ListGroup.Item>Trial period: $50 for four consecutive weeks.</ListGroup.Item> */}
                 <ListGroup.Item>Annual Club fees apply</ListGroup.Item>
             </Modal.Body>
             <Modal.Footer>

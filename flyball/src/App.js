@@ -38,7 +38,7 @@ const [isLoaded , setIsLoaded] = useState(false);
             <SchedulePanel />
             <WhatPanel />
             <TheTeam />
-            <Sponsors />
+            {/* <Sponsors /> */}
             <Contact />
           </Route>
         </div>
