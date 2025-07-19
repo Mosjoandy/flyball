@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import LoadingImage from "../../images/Loading/loading_savvy.gif"
 import './LoadPage.css';
 
 
@@ -10,7 +11,7 @@ function LoadPage() {
       });
     return (
         <div className="LoadImage justify-content-center" fluid id='contact'>
-            <img src='https://cdn.discordapp.com/attachments/255903025074405406/956672429550346320/loading_savvy.gif' />
+            <img src={LoadingImage} />
            <h1 className="gilligan-font text-center" >Grabbing the treats</h1>
         </div>
     );
