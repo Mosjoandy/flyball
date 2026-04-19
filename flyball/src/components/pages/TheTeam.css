@@ -17,3 +17,19 @@
 #theTeam {
   margin-bottom: 5vh;
 }
+
+/* Keep gallery height stable across mixed image dimensions */
+.image-gallery-slide .image-gallery-image {
+  width: 100%;
+  height: 65vh;
+  max-height: 640px;
+  min-height: 360px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .image-gallery-slide .image-gallery-image {
+    height: 50vh;
+    min-height: 260px;
+  }
+}

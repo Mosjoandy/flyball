@@ -16,26 +16,41 @@ class Nav extends Component {
         };
     };
 
-    // componentDidMount() {
-    //     window.addEventListener("scroll", this.handleScroll);
-    // };
+    componentDidMount() {
+        window.addEventListener("scroll", this.handleScroll, { passive: true });
+    };
 
-    // componentWillUnmount() {
-    //     window.removeEventListener("scroll", this.handleScroll);
-    // };
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.handleScroll);
+    };
 
 
-    // handleScroll = () => {
-    //     const { prevScrollpos } = this.state;
+    handleScroll = () => {
+        const { prevScrollpos, visible } = this.state;
+        const currentScrollPos = window.pageYOffset;
+        const scrollDelta = currentScrollPos - prevScrollpos;
+        const threshold = 5;
 
-    //     const currentScrollPos = window.pageYOffset;
-    //     const visible = prevScrollpos > currentScrollPos;
+        // Prevent rapid toggling on tiny scroll movements.
+        if (Math.abs(scrollDelta) < threshold) {
+            return;
+        }
 
-    //     this.setState({
-    //         prevScrollpos: currentScrollPos,
-    //         visible
-    //     });
-    // };
+        // Always show nav near top; otherwise show on up-scroll, hide on down-scroll.
+        const shouldBeVisible = currentScrollPos < 10 || scrollDelta < 0;
+
+        if (shouldBeVisible !== visible) {
+            this.setState({
+                prevScrollpos: currentScrollPos,
+                visible: shouldBeVisible
+            });
+            return;
+        }
+
+        this.setState({
+            prevScrollpos: currentScrollPos
+        });
+    };
 
     render() {
         return (
